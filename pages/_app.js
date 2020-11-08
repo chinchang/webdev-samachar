@@ -1,6 +1,7 @@
 import * as React from "react";
 import "../styles/globals.css";
 import NextLink from "next/link";
+import Head from "next/head";
 
 const linkClasses = "lg:text-xl text-white underline hover:text-gray-300";
 const Link = React.forwardRef((props, ref) => {
@@ -15,6 +16,12 @@ function MyApp({ Component, pageProps }) {
   const year = new Date().getFullYear();
   return (
     <div className="px-4 py-4 lg:p-10 h-screen flex flex-col">
+      <Head>
+        <meta
+          name="description"
+          content=" भारत का सबसे पहला Web Development हिंदी News Channel"
+        />
+      </Head>
       <main>
         <h1 className="text-center mb-3">
           <a href="/">
