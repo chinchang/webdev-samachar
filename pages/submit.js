@@ -26,12 +26,16 @@ export default function SubmitPage() {
       >
         <label className="block mb-4">
           <div>Your Name</div>
-          <input name="name" type="text" className="border-0 p-3 w-full" />
+          <input
+            name="name"
+            type="text"
+            className="border-0 p-3 w-full bg-blue-700"
+          />
         </label>
 
         <label>
           <div>What's the news?</div>
-          <textarea name="news" className="border-0 p-3 w-full" />
+          <textarea name="news" className="border-0 p-3 w-full bg-blue-700" />
         </label>
 
         <input name="date" type="hidden" value={new Date().toGMTString()} />
