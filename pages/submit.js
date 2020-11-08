@@ -38,7 +38,6 @@ export default function SubmitPage() {
           <textarea name="news" className="border-0 p-3 w-full bg-blue-700" />
         </label>
 
-        <input name="date" type="hidden" value={new Date().toGMTString()} />
         <input type="hidden" name="form-name" value="news" />
 
         <div className="flex justify-center mt-3">
