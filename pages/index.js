@@ -1,6 +1,6 @@
 import Head from "next/head";
 import NextLink from "next/link";
-import Image from "next/image";
+// import Image from "next/image";
 
 const Link = (props) => {
   return <a className="text-white underline" {...props} />;
@@ -19,7 +19,7 @@ export default function Home() {
 
       <main className="">
         <h1 className="text-center mb-3">
-          <Image
+          <img
             alt="WebDev Samachar logo"
             src="/logo.png"
             className="mx-auto mb-6 w-56"
