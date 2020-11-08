@@ -28,7 +28,8 @@ function MyApp({ Component, pageProps }) {
             <img
               alt="WebDev Samachar logo"
               src="/logo.png"
-              className="mx-auto mb-4 w-56 lg:w-64"
+              className="mx-auto mb-4 w-56 lg:w-1/3"
+              style={{ filter: "drop-shadow(2px 6px 10px rgba(0,0,0,0.25))" }}
             />
           </a>
         </h1>
