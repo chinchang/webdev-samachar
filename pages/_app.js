@@ -3,7 +3,8 @@ import "../styles/globals.css";
 import NextLink from "next/link";
 import Head from "next/head";
 
-const linkClasses = "lg:text-xl text-white underline hover:text-gray-300";
+const linkClasses =
+  "lg:text-xl text-white hover:text-gray-300 uppercase border-b-4 transform hover:scale-110 transition-all duration-200 ease-in-out";
 const Link = React.forwardRef((props, ref) => {
   return <a ref={ref} className={linkClasses} {...props} />;
 });

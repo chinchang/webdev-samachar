@@ -11,7 +11,7 @@ export default function Home() {
       <div className="flex justify-center my-20">
         <a
           href="https://www.youtube.com/channel/UCi3sYPCwBuKWZmYvo598wOQ"
-          className="inline-block mx-auto border-2 border-blue-800 p-3 rounded-md bg-gradient-to-b from-white via-gray-100 to-gray-500 hover:from-theme-blue hover:to-blue-900 hover:text-white text-black hover:bg-theme-blue lg:p-8 lg:text-3xl"
+          className="inline-block mx-auto border-2 border-blue-800 p-3 rounded-md bg-gradient-to-b from-white via-gray-100 to-gray-600  text-black lg:p-8 lg:text-3xl transform hover:scale-110 transition-all duration-150"
         >
           Watch News
         </a>
