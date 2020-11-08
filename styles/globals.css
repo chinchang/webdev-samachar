@@ -2,6 +2,7 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
+/* purgecss ignore */
 html,
 body {
   padding: 0;
@@ -13,6 +14,7 @@ body {
   font-size: 20px;
 }
 
+/* purgecss ignore */
 * {
   box-sizing: border-box;
 }
