@@ -1,65 +1,60 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import Head from "next/head";
+import NextLink from "next/link";
+import Image from "next/image";
 
+const Link = (props) => {
+  return <a className="text-white underline" {...props} />;
+};
+
+const LinkDivider = (props) => {
+  return <span className="mx-4">//</span>;
+};
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <div className="px-3 py-5 h-screen flex flex-col">
       <Head>
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
+      <main className="">
+        <h1 className="text-center mb-3">
+          <Image
+            alt="WebDev Samachar logo"
+            src="/logo.png"
+            className="mx-auto mb-6 w-56"
+            width={300}
+            height={150}
+          />
         </h1>
 
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
+        <p className="text-center text-2xl">
+          भारत का सबसे पहला <br></br>Web Development हिंदी News Channel
         </p>
 
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
+        <div className="flex justify-center my-10">
+          <a className="inline-block mx-auto border-2 border-blue-800 p-3 rounded-md bg-gradient-to-b from-white via-gray-100 to-gray-500 text-black">
+            Watch News
           </a>
+        </div>
 
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
+        <div className="flex justify-center my-5">
+          <NextLink href="/submit">
+            <Link>Submit News</Link>
+          </NextLink>
+          <LinkDivider />
+          <Link
+            target="_blank"
+            href={`https://twitter.com/intent/tweet?url=https://www.youtube.com/channel/UCi3sYPCwBuKWZmYvo598wOQ&text=Bharat ka sabse pehla Web Development हिंदी News Channel! 🥳🗞 \n Web Development main updated rehna ka best tareeka!  #webdev #news`}
           >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+            Share
+          </Link>
         </div>
       </main>
 
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
+      <footer className="text-center mt-auto">
+        Copyright 2020 WebDev Samachar
       </footer>
     </div>
-  )
+  );
 }
