@@ -39,6 +39,7 @@ export default function SubmitPage() {
         </label>
 
         <input name="date" type="hidden" value={new Date().toGMTString()} />
+        <input type="hidden" name="form-name" value="news" />
 
         <div className="flex justify-center mt-3">
           <button className="inline-block mx-auto border-2 border-blue-800 p-3 rounded-md bg-gradient-to-b from-white via-gray-100 to-gray-500 text-black">
