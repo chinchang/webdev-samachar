@@ -17,7 +17,13 @@ export default function SubmitPage() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <form className="mb-10" name="news" method="POST" data-netlify="true">
+      <h2 className="text-center text-bold text-2xl">Submit News</h2>
+      <form
+        className="mb-10 lg:w-1/3 mx-auto"
+        name="news"
+        method="POST"
+        data-netlify="true"
+      >
         <label className="block mb-4">
           <div>Your Name</div>
           <input name="name" type="text" className="border-0 p-3 w-full" />
@@ -36,19 +42,6 @@ export default function SubmitPage() {
           </button>
         </div>
       </form>
-
-      <div className="flex justify-center my-5">
-        <NextLink href="/submit">
-          <Link>Submit News</Link>
-        </NextLink>
-        <LinkDivider />
-        <Link
-          target="_blank"
-          href={`https://twitter.com/intent/tweet?url=https://www.youtube.com/channel/UCi3sYPCwBuKWZmYvo598wOQ&text=Bharat ka sabse pehla Web Development हिंदी News Channel! 🥳🗞 \n Web Development main updated rehna ka best tareeka!  #webdev #news`}
-        >
-          Share
-        </Link>
-      </div>
     </div>
   );
 }
