@@ -29,13 +29,14 @@ export default function SubmitPage() {
           <input
             name="name"
             type="text"
+            required
             className="border-0 p-3 w-full bg-blue-700"
           />
         </label>
 
         <label>
           <div>What's the news?</div>
-          <textarea name="news" className="border-0 p-3 w-full bg-blue-700" />
+          <textarea name="news" className="border-0 p-3 w-full bg-blue-700" required />
         </label>
 
         <input type="hidden" name="form-name" value="news" />
